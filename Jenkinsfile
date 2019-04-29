@@ -14,7 +14,7 @@ node('linux')
     }
     stage('Deploy') 
     {
-        sh 'aws s3 cp /workspace/java-pipeline/dist/rectangle-${BUILD_NUMBER}.jar s3://amar-seis665homework10/'
+        sh 'aws s3 cp dist/rectangle-${BUILD_NUMBER}.jar s3://amar-seis665homework10/'
     }
    
 }
